@@ -6,4 +6,4 @@ WORKDIR /app
 COPY lstm.py /app/app.py
 COPY data/reviews_dataset.tsv.zip /app/data/reviews_dataset.tsv.zip
 COPY model/.keep /app/model/.keep
-CMD ["bash"]
+CMD ["python3", "app.py"]
